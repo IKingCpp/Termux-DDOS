@@ -1,15 +1,7 @@
-
-Type command python2 ddos.py To run the script
 # How to Install
-
 * ```pkg install python```
-
-* ```pkg install python2```
-
 * ```pkg install git```
+* ```git clone https://github.com/IKingCpp/Termux-DDOS```
+* ```cd Termux-DDOS```
 
-* ```git clone https://github.com/pembriahmad/DDOS```
-
-* ```cd DDOS```
-
-Type command ```python2 ddos.py``` To run the script
+Type command ```python DDOS.py``` To run the script
