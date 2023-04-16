@@ -16,7 +16,7 @@ print("\033[01;31mMMMMMMMMMMM MMMMMMMMMMM MMMMMMMMMMM MMMMMMMMMMM")
 
 print("\033[01;33mAuthor:     \033[01;37mIKingCpp")
 
-print("\033[01;33mSource:     \033[01;37mNot Published")
+print("\033[01;33mSource:     \033[01;37mhttps://github.com/IKingCpp/Termux-DDOS")
 
 print("\033[01;37m------------")
 
