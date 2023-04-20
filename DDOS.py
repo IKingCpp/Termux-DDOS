@@ -3,23 +3,29 @@ import os
 
 os.system("clear")
 
-print("\033[01;31mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM")
-print("\033[01;31mM       YMM M       YMM MMP     YMM MP       MM")
-print("\033[01;31mM  mmmm   M M  mmmm   M M   mmm   M M  mmmmm  M")
-print("\033[01;31mM  MMMMM  M M  MMMMM  M M  MMMMM  M M        YM")
-print("\033[01;31mM  MMMMM  M M  MMMMM  M M  MMMMM  M MMMMMMM   M")
-print("\033[01;31mM  MMMM   M M  MMMM   M M   MMM   M M   MMM   M")
-print("\033[01;31mM        MM M        MM MMb     dMM Mb       dM")
-print("\033[01;31mMMMMMMMMMMM MMMMMMMMMMM MMMMMMMMMMM MMMMMMMMMMM")
+r = "\033[91m" #red
+y = "\033[33m" #yellow
+w = "\033[37m" #white
 
+banner = """
+{} MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+{} M       YMM M       YMM MMP     YMM MP       MM
+{} M  mmmm   M M  mmmm   M M   mmm   M M  mmmmm  M
+{} M  MMMMM  M M  MMMMM  M M  MMMMM  M M        YM
+{} M  MMMMM  M M  MMMMM  M M  MMMMM  M MMMMMMM   M
+{} M  MMMM   M M  MMMM   M M   MMM   M M   MMM   M
+{} M        MM M        MM MMb     dMM Mb       dM
+{} MMMMMMMMMMM MMMMMMMMMMM MMMMMMMMMMM MMMMMMMMMMM
 
-print("\033[01;33mAuthor:     \033[01;37mIKingCpp")
-print("\033[01;33mSource:     \033[01;37mNot Published")
+{} Author:    {} IKingCpp
+{} Source:    {} Soon
 
+{} ------------
+{} INPUT TARGET
+{} ------------
+""".format(r,r,r,r,r,r,r,r,y,w,y,w,w,w,w)
 
-print("\033[01;37m------------")
-print("\033[01;37mINPUT TARGET")
-print("\033[01;37m------------")
+print(banner)
 
 host = input("[*]\033[01;31mIP OR HOSTNAME :\033[01;37m ")
 port = input("[*]\033[01;31mPORT : \033[01;37m ")
