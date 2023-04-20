@@ -1,4 +1,7 @@
 import time
+import os
+
+os.system("clear")
 
 print("\033[01;31mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM")
 print("\033[01;31mM       YMM M       YMM MMP     YMM MP       MM")
